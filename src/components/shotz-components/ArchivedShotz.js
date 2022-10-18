@@ -8,6 +8,7 @@ export default function ArchivedShotz() {
 
     return (
       <>
+      
         <Header></Header>
         <div className="page-body container-fluid profile-page">
           <LeftSidebar></LeftSidebar>
