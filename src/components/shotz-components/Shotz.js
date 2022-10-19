@@ -1,62 +1,12 @@
-import { useState } from 'react'
+
 import Header from '../Header';
 import LeftSidebar from '../LeftSidebar'
 import RightSidebar from '../RightSidebar'
-// import Search from '../Search/Search';
-import classnames from 'classnames'
-import { Col, Nav, NavItem, Row, TabContent, TabPane, NavLink } from 'reactstrap'
 // import { Tab } from '@mui/material';
 import * as React from 'react'
-import Tabs from '@mui/material/Tabs'
-import Tab from '@mui/material/Tab'
-import Box from '@mui/material/Box'
+import SearchTab from '../Search/SearchTab';
 
 export default function Shotz() {
-    const [value, setValue] = React.useState(0);
-
-    const handleChange = (event) => {
-        setValue()
-    }
-
-    const SrchTabMenu = () => {
-        return (
-            <>
-                {/* <Row className='mt-3'>
-                    <Col md="12"> */}
-                <Box sx={{ maxWidth: { xs: 320, sm: 1200 }, bgcolor: 'background.paper' }}>
-                    <Tabs
-                        value={value}
-                        onChange={handleChange}
-                        variant="scrollable"
-                        scrollButtons="auto"
-                        aria-label="scrollable auto tabs example"
-                    >
-                        <Tab label="Item Two">
-                            dox
-                        </Tab>
-                        <Tab label="Item Two" />
-                        <Tab label="Item Three" />
-                        <Tab label="Item Four" />
-                        <Tab label="Item Five" />
-                        <Tab label="Item Six" />
-                        <Tab label="Item Seven" />
-                        <Tab label="Item Two" />
-                        <Tab label="Item Three" />
-                        <Tab label="Item Four" />
-                        <Tab label="Item Five" />
-                        <Tab label="Item Six" />
-                        <Tab label="Item Seven" />
-                    </Tabs>
-
-                </Box>
-                
-
-                {/* </Col>
-                </Row> */}
-            </>
-
-        )
-    }
 
     return (
         <>
@@ -65,7 +15,7 @@ export default function Shotz() {
                 <LeftSidebar></LeftSidebar>
                 <div className="page-center">
                     <div className="shotz-heading-block">
-                        <div className="row align-items-center">
+                        <div className="">
                             {/* <div className="col-md-4">
                                 <h3>Shotz (43)</h3>
                             </div>
@@ -114,8 +64,8 @@ export default function Shotz() {
                                     </div>
                                 </div>
                             </div> */}
-                            <SrchTabMenu />
-                            
+                            <SearchTab />
+
                         </div>
                     </div>
 

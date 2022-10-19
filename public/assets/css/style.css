@@ -62712,6 +62712,7 @@ header .header-section .profile-btn .user-img img {
 
 
 
+
 @media (max-width: 767.98px) {
   .create-btn-cust-option {
     justify-content: center;
@@ -62830,4 +62831,20 @@ header .header-section .profile-btn .user-img img {
   .biz-details-top .gd-top-block {
     justify-content: flex-end;
   }
+}
+.NavItem{
+  background-color:rgb(243,249,237);
+  margin: 7px;
+}
+.nav-pills .nav-link.active{
+  background-color:#81C14B;
+}
+.filterSec{
+  background: #F6F6F6;
+border: 1px solid #C4C4C4;
+border-radius: 5px;
+width: 100px;
+height: 45px;
+padding: 12px 25px;
+
 }
